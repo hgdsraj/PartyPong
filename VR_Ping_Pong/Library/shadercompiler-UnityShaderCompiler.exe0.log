@@ -1426,3 +1426,9 @@ Cmd: compileSnippet
   api=4 type=0 insize=1674 outsize=658 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING ok=1
 Cmd: compileSnippet
   api=4 type=1 insize=1674 outsize=494 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING ok=1
+Cmd: preprocess
+  insize=1401 outsize=473 ok=1
+Cmd: preprocess
+  insize=7914 outsize=585 ok=1
+Cmd: preprocess
+  insize=1459 outsize=506 ok=1
