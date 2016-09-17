@@ -8,7 +8,7 @@ PhysicMaterial:
   m_Name: Rubber
   dynamicFriction: 1
   staticFriction: 1
-  bounciness: 1
+  bounciness: 0.85
   frictionCombine: 3
   bounceCombine: 0
 --- !u!1002 &13400001
