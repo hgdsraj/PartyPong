@@ -11,7 +11,7 @@ public class force : MonoBehaviour {
         rb.AddForce(transform.forward * thrust);
 
     }
-
+    
     void FixedUpdate() 
     {
     }
