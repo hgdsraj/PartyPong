@@ -1,12 +1,30 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VR_Ping_Pong.CSharp.Plugins", "VR_Ping_Pong.CSharp.Plugins.csproj", "{63B16B4F-5489-C9E9-5E2B-C6C990AA56BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VR_Ping_Pong.CSharp", "VR_Ping_Pong.CSharp.csproj", "{E01BDC10-3087-B888-2493-1C8104119891}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VR_Ping_Pong.CSharp.Editor", "VR_Ping_Pong.CSharp.Editor.csproj", "{B100B699-12AC-D3A1-75FD-51598462419F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63B16B4F-5489-C9E9-5E2B-C6C990AA56BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63B16B4F-5489-C9E9-5E2B-C6C990AA56BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63B16B4F-5489-C9E9-5E2B-C6C990AA56BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63B16B4F-5489-C9E9-5E2B-C6C990AA56BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E01BDC10-3087-B888-2493-1C8104119891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E01BDC10-3087-B888-2493-1C8104119891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E01BDC10-3087-B888-2493-1C8104119891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E01BDC10-3087-B888-2493-1C8104119891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B100B699-12AC-D3A1-75FD-51598462419F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B100B699-12AC-D3A1-75FD-51598462419F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B100B699-12AC-D3A1-75FD-51598462419F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B100B699-12AC-D3A1-75FD-51598462419F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
