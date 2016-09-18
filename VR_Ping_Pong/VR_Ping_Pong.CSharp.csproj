@@ -74,6 +74,8 @@
     <Compile Include="Assets\FirstPersonControllerNOMOUSE.cs" />
     <Compile Include="Assets\HappySounds.cs" />
     <Compile Include="Assets\LockMouse.cs" />
+    <Compile Include="Assets\ScoreScript.cs" />
+    <Compile Include="Assets\StreakScript.cs" />
     <Compile Include="Assets\coll.cs" />
     <Compile Include="Assets\force.cs" />
     <Compile Include="Assets\paddlecontrol.cs" />

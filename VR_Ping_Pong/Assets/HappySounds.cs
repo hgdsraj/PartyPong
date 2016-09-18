@@ -1,10 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+public static class GlobalVariables
+{
+    public static int score = 0;
+    public static bool boolStreak = true;
+    public static int streak = 0;
+}
 
 public class HappySounds : MonoBehaviour {
     public GameObject BackBoard;
-    public int count = 0;
     public int volume = 20;
+    public int count = 0;
     public AudioSource crowd;
     public AudioSource airhorn;
     // Use this for initialization
@@ -20,6 +26,7 @@ public class HappySounds : MonoBehaviour {
 
         if (col.gameObject.name == "PingBall")
         {
+            GlobalVariables.score++;
             count++;
             if(count == 3)
             {
@@ -29,6 +36,10 @@ public class HappySounds : MonoBehaviour {
                 }
                 airhorn.Play();
                 count = 0;
+            }
+            if(GlobalVariables.boolStreak == true)
+            {
+                GlobalVariables.streak++;
             }
         }
 
