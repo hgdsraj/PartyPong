@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AudienceLoop.cs" />
+    <Compile Include="Assets\LockMouse.cs" />
     <Compile Include="Assets\ScriptCollide.cs" />
     <Compile Include="Assets\coll.cs" />
     <Compile Include="Assets\force.cs" />

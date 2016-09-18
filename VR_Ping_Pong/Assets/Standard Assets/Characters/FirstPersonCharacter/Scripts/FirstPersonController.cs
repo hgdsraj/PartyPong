@@ -17,7 +17,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private float m_JumpSpeed;
         [SerializeField] private float m_StickToGroundForce;
         [SerializeField] private float m_GravityMultiplier;
-        [SerializeField] private MouseLook m_MouseLook;
         [SerializeField] private bool m_UseFovKick;
         [SerializeField] private FOVKick m_FovKick = new FOVKick();
         [SerializeField] private bool m_UseHeadBob;
@@ -54,14 +53,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_NextStep = m_StepCycle/2f;
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
-			m_MouseLook.Init(transform , m_Camera.transform);
         }
 
 
         // Update is called once per frame
         private void Update()
         {
-            RotateView();
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
             {
@@ -130,7 +127,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 ProgressStepCycle(speed);
                 UpdateCameraPosition(speed);
 
-                m_MouseLook.UpdateCursorLock();
             
         }
 
@@ -237,10 +233,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
         }
 
 
-        private void RotateView()
-        {
-            m_MouseLook.LookRotation (transform, m_Camera.transform);
-        }
 
 
         private void OnControllerColliderHit(ControllerColliderHit hit)
