@@ -1,4 +1,4 @@
-﻿#pragma strict
+﻿
 
 var positionXOrigin;
 var positionYOrigin;

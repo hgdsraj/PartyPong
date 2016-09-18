@@ -7,7 +7,6 @@ public class ScriptCollide : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        audio = GetComponent<AudioSource>();
         moveSpeed = 10f;
     }
 
