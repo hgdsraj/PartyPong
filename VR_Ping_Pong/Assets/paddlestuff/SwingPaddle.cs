@@ -7,7 +7,7 @@ public class SwingPaddle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonDown("fire1")) {
+		if (Input.GetButtonDown("Fire1")) {
 			SwingAnim.swing();
 		}
 	
