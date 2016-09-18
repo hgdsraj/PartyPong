@@ -4,11 +4,11 @@ using System.Collections;
 public class ScoreScript : MonoBehaviour {
 
     void Start () {
-        transform.GetComponent<TextMesh>().text = "Total: 0";
+        transform.GetComponent<TextMesh>().text = "Score: 0";
     }
 
 	// Update the score text
 	void Update () {
-		transform.GetComponent<TextMesh> ().text = "Total: " + GlobalVariables.score;
+		transform.GetComponent<TextMesh> ().text = "Score: " + GlobalVariables.score;
 	}
 }

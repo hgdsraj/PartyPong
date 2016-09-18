@@ -13,14 +13,30 @@ public class HappySounds : MonoBehaviour {
     public int count = 0;
     public AudioSource crowd;
     public AudioSource airhorn;
+    public float duration = 0.2F;
+    public Color color0 = Color.red;
+    public Color color1 = Color.blue;
+    public Light lt;
+    private bool passed = false;
+
+
     // Use this for initialization
     void Start()
     {
+        lt = GetComponent<Light>();
         AudioSource[] allMyAudioSources = GetComponents<AudioSource>();
         crowd = allMyAudioSources[1];
         airhorn = allMyAudioSources[0];
-    }
 
+    }
+    void Update()
+    {
+        if(passed == true)
+        {
+            float t = Mathf.PingPong(Time.time, duration) / duration;
+            lt.color = Color.Lerp(color0, color1, t);
+        }
+    }
     // Update is called once per frame
     void OnCollisionEnter(Collision col)  {
 
@@ -28,16 +44,19 @@ public class HappySounds : MonoBehaviour {
         {
             GlobalVariables.score++;
             count++;
-            if(count == 3)
+            if (count == 3)
             {
-                if (crowd.volume < 100)
-                {
-                    crowd.volume = crowd.volume + 1;
-                }
+
                 airhorn.Play();
+                passed = true;
                 count = 0;
+                }
+               
             }
-            if(GlobalVariables.boolStreak == true)
+
+  
+            
+            if (GlobalVariables.boolStreak == true)
             {
                 GlobalVariables.streak++;
             }
@@ -47,4 +66,4 @@ public class HappySounds : MonoBehaviour {
         
 
     }
-}
+

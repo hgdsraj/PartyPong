@@ -19,6 +19,8 @@ public class BallHit : MonoBehaviour {
             this.transform.position = new Vector3(Random.Range(-3.0f, 3.0f), Random.Range(5.0f, 10.0f),0);
             rb.velocity = new Vector3(0,0,Random.Range(-5.0f,-10.0f));
             GlobalVariables.boolStreak = false;
+            GlobalVariables.streak = 0;
+            GlobalVariables.score = 0;
         }
 
         if (col.gameObject.name == "Paddle")
